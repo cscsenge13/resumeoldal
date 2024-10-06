@@ -1,7 +1,7 @@
 
   body {
     margin: 0;
-    background-color: rgb(177, 208, 255);
+    background-color: rgb(211,208,201);
 }
 
 h1 {
@@ -10,15 +10,42 @@ font-family: "Bradley Hand ITC", "Candara Light", "Courier New", monospace;
 font-size: 9vw;
 font-weight: normal;
 margin-bottom: 0;
+text-transform: uppercase;
 }
 
-h2 {color:blueviolet}
+h2 {
+  color: rgb(106,73,54);
+text-transform: uppercase;
+font-size: 5vw;
+font-weight: normal;
+}
 
-#insta {width:30px;height:auto}
 
 p {
   font-family: "Candara", "Courier New", monospace;
+  color: rgb(36,19,17)
 }
+
+
+#rolam {
+  text-align: center; /* Középre igazítja a h2 elemet */
+  margin: 20px; /* Térköz a div körül */
+  margin-top: 100px;
+}
+
+#rolam h2 {
+  margin-bottom: 50px; /* Margó a h2 elem alatt */
+  font-family: "Bradley Hand ITC", "Candara Light", "Courier New", monospace ;
+}
+
+#rolam p {
+   /* Margó az oldal két szélétől (bal és jobb) */
+  text-align: justify; /* Sorkizárt szöveg */
+  line-height: 1.6; /* A sorok közötti távolság növelése */
+  
+}
+#insta {width:30px;height:auto}
+
 
 .hero-image {
   background-image: url(cim.jpg);
@@ -49,6 +76,13 @@ p {
 @media (max-width: 768px) {
   #cim {
     font-size: 3vw; /* Kisebb képernyőkön nagyobb betűméret */
+  
+  }
+  #rolam p {
+    margin:0 10%;
+  }
+  #rolam h2 {
+    font-size: 8vw;
   }
 }
 
@@ -56,7 +90,14 @@ p {
   #cim {
     font-size: 2vw; /* Nagyobb képernyőkön kisebb betűméret */
   }
+#rolam p {
+  margin:0 25%;
 }
+#rolam h2 {
+  font-size: 5vw;
+}
+}
+
 
 .topnav {
     background-color: rgb(180,172,156);
