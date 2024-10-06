@@ -1,11 +1,42 @@
 
   body {
+    margin: 0;
     background-color: rgb(177, 208, 255);
+}
+
+h1 {
+  color: ;
+font-family: "Bradley Hand ITC", "Candara Light", "Courier New", monospace;
 }
 
 h2 {color:blueviolet}
 #insta {width:30px;height:auto}
 
+p {
+  font-family: "Candara", "Courier New", monospace;
+}
+
+.hero-image {
+  background-image: url(cim.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+#cim {
+  font-size: 25px;
+  color: rgb (238,238,238);
+}
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -62,4 +93,5 @@ h2 {color:blueviolet}
       text-align: left;
     }
   }
+ 
   
