@@ -44,8 +44,6 @@ p {
   line-height: 1.6; /* A sorok közötti távolság növelése */
   
 }
-#insta {width:30px;height:auto}
-
 
 .hero-image {
   background-image: url(cim.jpg);
@@ -73,30 +71,7 @@ p {
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
-  #cim {
-    font-size: 3vw; /* Kisebb képernyőkön nagyobb betűméret */
-  
-  }
-  #rolam p {
-    margin:0 10%;
-  }
-  #rolam h2 {
-    font-size: 8vw;
-  }
-}
 
-@media (min-width: 769px) {
-  #cim {
-    font-size: 2vw; /* Nagyobb képernyőkön kisebb betűméret */
-  }
-#rolam p {
-  margin:0 25%;
-}
-#rolam h2 {
-  font-size: 5vw;
-}
-}
 
 
 .topnav {
@@ -157,4 +132,92 @@ p {
     }
   }
  
+  .photo-gallery {
+    display: flex; /* Flexbox használata a sorban történő elhelyezéshez */
+    justify-content: space-between; /* Egyenlő távolság a fotók között */
+    align-items: center; /* Függőleges középre igazítás */
+    margin: 20px 20px; /* Térköz a gallery körül */
+  }
   
+  .photo-item {
+    text-align: center; /* Középre igazítja a képet és a linket */
+    width: 30%; /* Minden fotó 30%-ot foglal el a rendelkezésre álló helyből */
+    
+  }
+  
+  .photo-item img {
+    width: 100%; /* A kép kitölti a szülő elem szélességét */
+    height: auto; /* Megőrzi a képarányt */
+    border-radius: 8px; /* Lekerekített sarkok (opcionális) */
+  }
+  
+  .photo-item p {
+    margin-top: 10px; /* Térköz a kép és a képaláírás között */
+    font-size: 14px; /* Képaláírás betűmérete */
+    color: #333; /* Képaláírás színe */
+  }
+
+  
+  .photo-item a:hover img {
+    opacity: 0.8;
+  }
+  
+  #munkak h2 {
+    text-align: center;
+    font-family: "Bradley Hand ITC", "Candara Light", "Courier New", monospace;
+    font-weight: normal;
+  }
+
+  #munkak {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    #cim {
+      font-size: 3vw; /* Kisebb képernyőkön nagyobb betűméret */
+    
+    }
+    #rolam p {
+      margin:0 10%;
+    }
+     h2 {
+      font-size: 8vw;
+    }
+    
+    .photo-gallery {
+      flex-direction: column; /* Egymás alá helyezés */
+      align-items: center; /* Középre igazítás */
+    }
+  
+    .photo-item {
+      width: 80%; /* A képek szélessége 80% legyen */
+      margin: 10px 0; /* Függőleges margó a képek között */
+    }
+    .photo-item p {
+      font-size: 4vw;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    #cim {
+      font-size: 2vw; /* Nagyobb képernyőkön kisebb betűméret */
+    }
+  #rolam p {
+    margin:0 25%;
+  }
+   h2 {
+    font-size: 5vw;
+  }
+  .photo-item p {
+    font-size: 2vw;
+  }
+  }
+
+  footer {
+    margin:50px 0;
+    text-align: center;
+  }
+  #insta {
+    width:30px;
+    height:auto
+  }
