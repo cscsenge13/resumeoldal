@@ -178,11 +178,13 @@ h3 {
 
   @media (max-width: 768px) {
     #cim {
-      font-size: 3vw; /* Kisebb képernyőkön nagyobb betűméret */
+      font-size: 3.5vw; /* Kisebb képernyőkön nagyobb betűméret */
     
     }
     #rolam p {
       margin:0 10%;
+      
+      
     }
      h2 {
       font-size: 8vw;
@@ -200,6 +202,7 @@ h3 {
     .photo-item p {
       font-size: 4vw;
     }
+    
   }
   
   @media (min-width: 769px) {
