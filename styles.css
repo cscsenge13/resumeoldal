@@ -183,7 +183,7 @@ h3 {
     }
     #rolam p {
       margin:0 10%;
-      
+      text-align: left;
       
     }
      h2 {
@@ -211,6 +211,7 @@ h3 {
     }
   #rolam p {
     margin:0 25%;
+    
   }
    h2 {
     font-size: 5vw;
