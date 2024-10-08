@@ -1,5 +1,5 @@
 
-  body {
+body {
     margin: 0;
     background-color: rgb(234, 231, 225);
 }
@@ -74,9 +74,6 @@ h3 {
   color: rgb(238,238,238);
   margin-top: 0;
 }
-
-
-
 
 .topnav {
     background-color: rgb(180,172,156);
@@ -221,11 +218,11 @@ h3 {
   }
   }
 
-  footer {
+footer {
     margin:50px 0;
     text-align: center;
   }
-  #insta {
+#insta {
     width:30px;
     height:auto
   }
@@ -258,6 +255,7 @@ button {
   border-radius: 5px;      /* Lekerekített sarkok */
   background-color: rgb(106,73,54); /* Gomb háttérszín */
   color: rgb(238,238,238);             /* Betűszín */
+  font-family: "Candara", "Courier New", monospace;
         }
 button:hover {
             background-color: rgb(238,238,238); /* Gomb színének változása hover esetén */
